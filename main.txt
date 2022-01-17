@@ -19,6 +19,7 @@ install xorg-x11-drv-evdev
 
 #install r8168-8.049.02 if lost network
 https://github.com/mtorromeo/r8168/releases
+https://community.hetzner.com/tutorials/installing-the-r8168-driver
 
 
 #install nvidia-docker
