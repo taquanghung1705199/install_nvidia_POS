@@ -1,4 +1,4 @@
-rd.blacklist=nouveau nouveau.modeset=0
+#rd.blacklist=nouveau nouveau.modeset=0
 
 
 ##install core
@@ -11,6 +11,10 @@ yum update kernel-uek
 yum install kernel-uek-devel
 yum install gcc gcc-c++
 
+Edit /etc/default/grub. Append the following  to “GRUB_CMDLINE_LINUX”
+rd.driver.blacklist=nouveau nouveau.modeset=0
+
+grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
 
 ##install r8168-8.049.02 if lost network
 #doc
@@ -41,11 +45,6 @@ https://www.advancedclustering.com/act_kb/installing-nvidia-drivers-rhel-centos-
 #execute
 sudo yum -y install epel-release
 sudo yum -y install dkms
-
-Edit /etc/default/grub. Append the following  to “GRUB_CMDLINE_LINUX”
-rd.driver.blacklist=nouveau nouveau.modeset=0
-
-grub2-mkconfig -o /boot/efi/EFI/redhat/grub.cfg
 
 Edit/create /etc/modprobe.d/blacklist.conf and append:
 blacklist nouveau
