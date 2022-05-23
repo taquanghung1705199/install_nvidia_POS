@@ -1,0 +1,57 @@
+-------------------------------
+Thu Feb 10 09:07:10 +07 2022
+make -C src/ clean
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src clean
+make: Entering an unknown directory
+make: Leaving an unknown directory
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
+-------------------------------
+Thu Feb 10 09:12:58 +07 2022
+make -C src/ clean
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src clean
+make: Entering an unknown directory
+make: Leaving an unknown directory
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
+-------------------------------
+Thu Feb 10 09:14:59 +07 2022
+make -C src/ clean
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src clean
+make[2]: Entering directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+make[2]: Leaving directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
+-------------------------------
+Thu Feb 10 09:38:58 +07 2022
+make -C src/ clean
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src clean
+make[2]: Entering directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+  CLEAN   /root/Downloads/r8168-8.049.02/src/Module.symvers
+make[2]: Leaving directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
+make -C src/ modules
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src modules
+make[2]: Entering directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+  CC [M]  /root/Downloads/r8168-8.049.02/src/r8168_n.o
+  CC [M]  /root/Downloads/r8168-8.049.02/src/r8168_asf.o
+  CC [M]  /root/Downloads/r8168-8.049.02/src/rtl_eeprom.o
+  CC [M]  /root/Downloads/r8168-8.049.02/src/rtltool.o
+  LD [M]  /root/Downloads/r8168-8.049.02/src/r8168.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC [M]  /root/Downloads/r8168-8.049.02/src/r8168.mod.o
+  CTF
+  LD [M]  /root/Downloads/r8168-8.049.02/src/r8168.ko
+make[2]: Leaving directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
+make -C src/ install
+make[1]: Entering directory `/root/Downloads/r8168-8.049.02/src'
+make -C /lib/modules/5.4.17-2136.302.7.2.3.el7uek.x86_64/build M=/root/Downloads/r8168-8.049.02/src INSTALL_MOD_DIR=kernel/drivers/net/ethernet/realtek modules_install
+make[2]: Entering directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+  INSTALL /root/Downloads/r8168-8.049.02/src/r8168.ko
+  DEPMOD  5.4.17-2136.302.7.2.3.el7uek.x86_64
+make[2]: Leaving directory `/usr/src/kernels/5.4.17-2136.302.7.2.3.el7uek.x86_64'
+make[1]: Leaving directory `/root/Downloads/r8168-8.049.02/src'
